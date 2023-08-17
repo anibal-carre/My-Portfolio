@@ -5,7 +5,7 @@ import mainImg from "../assets/main-img.jpg";
 
 const Main = () => {
   const handleDownload = () => {
-    const pdfUrl = "/assets/Mi currículo.pdf";
+    const pdfUrl = "../assets/Mi currículo.pdf";
     window.open(pdfUrl, "_blank");
   };
 
@@ -77,11 +77,10 @@ const Main = () => {
               />
             </a>
           </div>
-          <button
-            onClick={handleDownload}
-            className="mt-10 bg-[#001b5e] text-white font-semibold p-2 rounded-lg"
-          >
-            Download Resume
+          <button className="mt-10 bg-[#001b5e] text-white font-semibold p-2 rounded-lg">
+            <a href="src/assets/resume.pdf" download>
+              Download Resume
+            </a>
           </button>
         </div>
       </div>

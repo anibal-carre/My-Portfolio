@@ -5,7 +5,7 @@ const Contact = () => {
         Contact
       </h1>
       <form
-        action="https://getform.io/f/6f54883d-9d8d-4eb1-acb8-6adddbb9a314"
+        action="https://formspree.io/f/meqbayld"
         method="POST"
         encType="multipart/form-data"
       >
