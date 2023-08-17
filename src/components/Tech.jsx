@@ -57,6 +57,11 @@ const Tech = () => {
             height={35}
           />
           <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
+            width={35}
+            height={35}
+          />
+          <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain-wordmark.svg"
             width={35}
             height={35}
