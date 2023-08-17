@@ -73,10 +73,7 @@ const Main = () => {
             </a>
           </div>
           <button className="mt-10 bg-[#001b5e] text-white font-semibold p-2 rounded-lg">
-            <a
-              href="https://my-portfolio-iota-khaki-13.vercel.app/assets/resume.pdf"
-              download
-            >
+            <a href="/resume.pdf" download>
               Download Resume
             </a>
           </button>
