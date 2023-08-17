@@ -1,10 +1,11 @@
 import { TypeAnimation } from "react-type-animation";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
+import mainImg from "../assets/main-img.jpg";
 
 const Main = () => {
   const handleDownload = () => {
-    const pdfUrl = "src/assets/Mi currículo.pdf";
+    const pdfUrl = "/assets/Mi currículo.pdf";
     window.open(pdfUrl, "_blank");
   };
 
@@ -12,7 +13,7 @@ const Main = () => {
     <div id="main">
       <img
         className="w-full h-screen object-cover object-left scale-x-[-1]"
-        src="src\assets\main-img.jpg"
+        src={mainImg}
         alt="main-img"
       />
       <div className="w-full h-screen absolute top-0 left-0 bg-white/50">
