@@ -21,10 +21,11 @@ const Projects = () => {
         Projects
       </h1>
       <p className="text-center py-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est a
-        exercitationem sunt tempore laborum aliquam optio labore, velit maiores
-        repudiandae provident commodi asperiores. Necessitatibus, vitae harum.
-        Eius mollitia deleniti consequuntur?
+        From creating interactive websites using HTML, CSS, and JavaScript to
+        building dynamic applications with React and Next.js, and crafting
+        solutions with PHP, my work embodies a mix of creativity and technical
+        prowess. Additionally, I've used Tailwind CSS to enhance the visual
+        appeal and responsiveness of my projects.
       </p>
       <div className="grid sm:grid-cols-2 gap-12 2xl:grid-cols-3">
         <ProjectItem
