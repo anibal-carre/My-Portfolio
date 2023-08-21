@@ -1,4 +1,11 @@
-const ProjectItem = ({ img, title, tech, url }) => {
+const ProjectItem = ({
+  img,
+  title,
+  tech,
+  url,
+  languageTexts,
+  currentLanguage,
+}) => {
   return (
     <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-gray-200 to-[#001b5e]">
       <img
@@ -13,7 +20,7 @@ const ProjectItem = ({ img, title, tech, url }) => {
         <p className="pb-4 pt-2 text-white text-center">{tech}</p>
         <a target="_blank" href={url}>
           <p className="text-center p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg">
-            More Info
+            {languageTexts[currentLanguage].info}
           </p>
         </a>
       </div>
