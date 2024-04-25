@@ -8,7 +8,9 @@ export const languageTexts = {
       cod: "Coder",
       ent: "Tech Enthisiast",
     },
-    info: "More Info",
+    demo: "Live",
+    repository: "Repository",
+
     lang: {
       language: "Language",
       language1: "English",
@@ -64,7 +66,8 @@ export const languageTexts = {
       cod: "Codificador",
       ent: "Entusiasta de tecnologia",
     },
-    info: "Mais Info",
+    demo: "Live",
+    repository: "Repositorio",
     lang: {
       language: "Idioma",
       language1: "Inglês",
@@ -122,7 +125,8 @@ export const languageTexts = {
       cod: "Codificador",
       ent: "Entusiasta de la tecnología",
     },
-    info: "Más Info",
+    demo: "Live",
+    repository: "Repositorio",
     lang: {
       language1: "Inglés",
       language2: "Español",
