@@ -25,15 +25,19 @@ const ProjectItem = ({
             return <img className="w-[40px] h-[40px]" src={e} key={i} />;
           })}
         </div>
-        <div className="flex gap-2">
-          <a target="_blank" href={demo}>
-            <p className="flex items-center gap-1 text-center p-2 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-md">
-              {languageTexts[currentLanguage].demo}
-              <AiOutlinePlayCircle />
-            </p>
-          </a>
+        <div className="flex justify-center gap-2">
+          {demo == null ? (
+            ""
+          ) : (
+            <a target="_blank" href={demo}>
+              <p className="flex items-center gap-1 text-center p-2 rounded-lg bg-white text-gray-700 hover:bg-zinc-800 hover:text-white transition-all font-bold cursor-pointer text-md">
+                {languageTexts[currentLanguage].demo}
+                <AiOutlinePlayCircle />
+              </p>
+            </a>
+          )}
           <a target="_blank" href={repository}>
-            <p className="flex items-center gap-1 text-center p-2 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-md">
+            <p className="flex items-center gap-1 text-center p-2 rounded-lg bg-white text-gray-700 hover:bg-zinc-800 hover:text-white transition-all font-bold cursor-pointer text-md">
               {languageTexts[currentLanguage].repository}{" "}
               <AiOutlineGithub className="text-[20px]" />
             </p>
