@@ -5,3 +5,25 @@
 * {
   scroll-behavior: smooth;
 }
+
+
+
+#scroll::-webkit-scrollbar{
+  width: 12px;
+ 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(51, 49, 49); /* Color del thumb (barra deslizadora) */
+    border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color: #001b5e; /* Color del thumb (barra deslizadora) */
+    border-radius: 4px;
+}
+
+#scroll::-webkit-scrollbar-track{
+  background-color: rgba(229, 224, 224, 0.606); 
+  padding: 2px;
+}

@@ -1,3 +1,4 @@
+import { dbTech } from "../../db/dbTech";
 const Tech = ({ languageTexts, currentLanguage }) => {
   return (
     <div className="max-w-[1040px] m-auto md:pl-20 p-4 py-16 2xl:max-w-[1500px]">
@@ -9,60 +10,19 @@ const Tech = ({ languageTexts, currentLanguage }) => {
         {languageTexts[currentLanguage].techContent}
       </p>
 
-      <div className="flex justify-center">
-        <div className="flex flex-wrap justify-between pt-6 max-w-[400px] w-full mt-5">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-            width={30}
-            height={30}
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-            width={30}
-            height={30}
-          />
-
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-            width={30}
-            height={30}
-          />
-
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-            width={30}
-            height={30}
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg"
-            width={30}
-            height={30}
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-            width={30}
-            height={30}
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-            width={30}
-            height={30}
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-            width={35}
-            height={35}
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
-            width={35}
-            height={35}
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain-wordmark.svg"
-            width={35}
-            height={35}
-          />
+      <div className="w-full flex justify-center">
+        <div className="flex flex-wrap gap-4 pt-6 max-w-[700px] w-full mt-5">
+          {dbTech.map((e) => {
+            return (
+              <img
+                key={e.id}
+                src={e.icon}
+                alt={e.title}
+                width={40}
+                height={40}
+              />
+            );
+          })}
         </div>
       </div>
     </div>

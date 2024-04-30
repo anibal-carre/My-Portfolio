@@ -11,6 +11,8 @@ function App() {
   const storedLanguage = localStorage.getItem("selectedLanguage") || "en";
   const [currentLanguage, setCurrentLanguage] = useState(storedLanguage);
 
+  const [theme, setTheme] = useState("light");
+
   const handleChangeLanguage = (newLanguage) => {
     setCurrentLanguage(newLanguage);
     localStorage.setItem("selectedLanguage", newLanguage);
@@ -24,6 +26,8 @@ function App() {
       <Sidenav
         currentLanguage={currentLanguage}
         languageTexts={languageTexts}
+        setTheme={setTheme}
+        theme={theme}
       />
       <Main
         currentLanguage={currentLanguage}

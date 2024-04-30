@@ -10,6 +10,10 @@ export const languageTexts = {
     },
     demo: "Live",
     repository: "Repository",
+    filter: {
+      first: "First Projects",
+      last: "Last Projects",
+    },
 
     lang: {
       language: "Language",
@@ -34,7 +38,8 @@ export const languageTexts = {
       time3: "3 months",
     },
     tech: "Technologies",
-    techContent: "These are some of the languages I have used in my projects",
+    techContent:
+      "These are some of the technologies I have used in my projects",
     projects: "Projects",
     projectContent:
       "From creating interactive websites using HTML, CSS, and JavaScript to building dynamic applications with React and Next.js, and crafting solutions with PHP, my work embodies a mix of creativity and technical prowess. Additionally, I've used Tailwind CSS to enhance the visual appeal and responsiveness of my projects.",
@@ -68,6 +73,10 @@ export const languageTexts = {
     },
     demo: "Live",
     repository: "Repositorio",
+    filter: {
+      first: "Primeiros Projetos",
+      last: "Últimos Projetos",
+    },
     lang: {
       language: "Idioma",
       language1: "Inglês",
@@ -93,7 +102,7 @@ export const languageTexts = {
     },
     tech: "Tecnologias",
     techContent:
-      "Estas são algumas das linguagens que tenho utilizado em meus projetos",
+      "Estas são algumas das tecnologias que tenho utilizado em meus projetos",
     projects: "Projetos",
     projectContent:
       "Desde a criação de sites interativos usando HTML, CSS e JavaScript até a construção de aplicações dinâmicas com React e Next.js, e desenvolvimento de soluções com PHP, meu trabalho incorpora uma mistura de criatividade e habilidades técnicas. Além disso, utilizei o Tailwind CSS para aprimorar o apelo visual e a responsividade dos meus projetos.",
@@ -127,6 +136,10 @@ export const languageTexts = {
     },
     demo: "Live",
     repository: "Repositorio",
+    filter: {
+      first: "Primeros Proyectos",
+      last: "Últimos Proyectos",
+    },
     lang: {
       language1: "Inglés",
       language2: "Español",
@@ -151,7 +164,7 @@ export const languageTexts = {
     },
     tech: "Tecnologías",
     techContent:
-      "Estos son algunos de los lenguajes que he usado en mis proyectos",
+      "Estas son algunas de las tecnologías que he usado en mis proyectos",
     projects: "Proyectos",
     projectContent:
       "Desde la creación de sitios web interactivos utilizando HTML, CSS y JavaScript hasta la construcción de aplicaciones dinámicas con React y Next.js, y la creación de soluciones con PHP, mi trabajo incorpora una mezcla de creatividad y destreza técnica. Además, he utilizado Tailwind CSS para mejorar el atractivo visual y la capacidad de respuesta de mis proyectos.",
