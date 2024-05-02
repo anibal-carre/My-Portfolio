@@ -10,13 +10,17 @@ import { useState, useEffect } from "react";
 function App() {
   const storedLanguage = localStorage.getItem("selectedLanguage") || "en";
   const [currentLanguage, setCurrentLanguage] = useState(storedLanguage);
-
-  const [theme, setTheme] = useState("light");
+  const storedTheme = localStorage.getItem("theme") || "light";
+  const [theme, setTheme] = useState(storedTheme);
 
   const handleChangeLanguage = (newLanguage) => {
     setCurrentLanguage(newLanguage);
     localStorage.setItem("selectedLanguage", newLanguage);
   };
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   useEffect(() => {
     document.documentElement.lang = currentLanguage;
@@ -33,6 +37,7 @@ function App() {
         currentLanguage={currentLanguage}
         languageTexts={languageTexts}
         handleChangeLanguage={handleChangeLanguage}
+        theme={theme}
       />
       <Courses
         languageTexts={languageTexts}

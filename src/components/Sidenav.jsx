@@ -7,7 +7,7 @@ import {
 } from "react-icons/ai";
 import { BiSun, BiMoon } from "react-icons/bi";
 import { GrProjects } from "react-icons/gr";
-import { BsPerson } from "react-icons/bs";
+import { BsPerson, BsBook } from "react-icons/bs";
 
 const Sidenav = ({ languageTexts, currentLanguage, theme, setTheme }) => {
   const [nav, setNav] = useState(false);
@@ -30,7 +30,11 @@ const Sidenav = ({ languageTexts, currentLanguage, theme, setTheme }) => {
           <a
             onClick={handleNav}
             href="#main"
-            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+            className={`w-[75%] flex justify-center items-center rounded-full shadow-lg  ${
+              theme == "dark"
+                ? "bg-zinc-700 shadow-zinc-800 text-white"
+                : "bg-gray-100 shadow-gray-400 text-black"
+            }  m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200`}
           >
             <AiOutlineHome size={20} />
             <span className="pl-4">
@@ -41,9 +45,13 @@ const Sidenav = ({ languageTexts, currentLanguage, theme, setTheme }) => {
           <a
             onClick={handleNav}
             href="#work"
-            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+            className={`w-[75%] flex justify-center items-center rounded-full shadow-lg  ${
+              theme == "dark"
+                ? "bg-zinc-700 shadow-zinc-800 text-white"
+                : "bg-gray-100 shadow-gray-400 text-black"
+            }  m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200`}
           >
-            <GrProjects size={20} />
+            <BsBook size={20} />
             <span className="pl-4">
               {languageTexts[currentLanguage].menu.course}
             </span>
@@ -52,7 +60,11 @@ const Sidenav = ({ languageTexts, currentLanguage, theme, setTheme }) => {
           <a
             onClick={handleNav}
             href="#projects"
-            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+            className={`w-[75%] flex justify-center items-center rounded-full shadow-lg  ${
+              theme == "dark"
+                ? "bg-zinc-700 shadow-zinc-800 text-white"
+                : "bg-gray-100 shadow-gray-400 text-black"
+            }  m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200`}
           >
             <AiOutlineProject size={20} />
             <span className="pl-4">
@@ -63,7 +75,11 @@ const Sidenav = ({ languageTexts, currentLanguage, theme, setTheme }) => {
           <a
             onClick={handleNav}
             href="#main"
-            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+            className={`w-[75%] flex justify-center items-center rounded-full shadow-lg  ${
+              theme == "dark"
+                ? "bg-zinc-700 shadow-zinc-800 text-white"
+                : "bg-gray-100 shadow-gray-400 text-black"
+            }  m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200`}
           >
             <BsPerson size={20} />
             <span className="pl-4">
@@ -74,7 +90,11 @@ const Sidenav = ({ languageTexts, currentLanguage, theme, setTheme }) => {
           <a
             onClick={handleNav}
             href="#contact"
-            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+            className={`w-[75%] flex justify-center items-center rounded-full shadow-lg  ${
+              theme == "dark"
+                ? "bg-zinc-700 shadow-zinc-800 text-white"
+                : "bg-gray-100 shadow-gray-400 text-black"
+            }  m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200`}
           >
             <AiOutlineMail size={20} />
             <span className="pl-4">
@@ -84,7 +104,11 @@ const Sidenav = ({ languageTexts, currentLanguage, theme, setTheme }) => {
           {theme == "dark" ? (
             <a
               onClick={() => setTheme("light")}
-              className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+              className={`w-[75%] flex justify-center items-center rounded-full shadow-lg  ${
+                theme == "dark"
+                  ? "bg-zinc-700 shadow-zinc-800 text-white"
+                  : "bg-gray-100 shadow-gray-400 text-black"
+              }  m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200`}
             >
               <BiSun size={20} />
               <span className="pl-4">{"Dark"}</span>
@@ -92,7 +116,11 @@ const Sidenav = ({ languageTexts, currentLanguage, theme, setTheme }) => {
           ) : (
             <a
               onClick={() => setTheme("dark")}
-              className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+              className={`w-[75%] flex justify-center items-center rounded-full shadow-lg  ${
+                theme == "dark"
+                  ? "bg-zinc-700 shadow-zinc-800 text-white"
+                  : "bg-gray-100 shadow-gray-400 text-black"
+              }  m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200`}
             >
               <BiMoon size={20} />
               <span className="pl-4">{"Light"}</span>

@@ -4,7 +4,12 @@ import { AiFillGithub } from "react-icons/ai";
 import mainImg from "../assets/main-img.jpg";
 import SelectLanguage from "./SelectLanguage";
 
-const Main = ({ languageTexts, handleChangeLanguage, currentLanguage }) => {
+const Main = ({
+  languageTexts,
+  handleChangeLanguage,
+  currentLanguage,
+  theme,
+}) => {
   return (
     <div id="main">
       <img
@@ -12,12 +17,24 @@ const Main = ({ languageTexts, handleChangeLanguage, currentLanguage }) => {
         src={mainImg}
         alt="main-img"
       />
-      <div className="w-full h-screen absolute top-0 left-0 bg-white/50">
+      <div
+        className={`w-full h-screen absolute top-0 left-0 ${
+          theme == "dark" ? "bg-zinc-700/50" : "bg-white/50"
+        } `}
+      >
         <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
-          <h1 className="sm:text-5xl text-4xl font-bold text-gray-800">
+          <h1
+            className={`sm:text-5xl text-4xl font-bold ${
+              theme == "dark" ? "text-white/90" : "text-gray-800"
+            }`}
+          >
             {languageTexts[currentLanguage].myInfo.im} David Carreño
           </h1>
-          <h2 className="flex sm:text-3xl text-2xl pt-4 text-gray-800">
+          <h2
+            className={`flex sm:text-3xl text-2xl pt-4 ${
+              theme == "dark" ? "text-white/90" : "text-gray-800"
+            }`}
+          >
             {languageTexts[currentLanguage].myInfo.i}
             <TypeAnimation
               sequence={[
@@ -41,7 +58,9 @@ const Main = ({ languageTexts, handleChangeLanguage, currentLanguage }) => {
           <div className="flex justify-between pt-6 max-w-[200px] w-full mt-5">
             <a target="_blank" href="https://github.com/anibal-carre">
               <AiFillGithub
-                className="cursor-pointer hover:text-black"
+                className={`cursor-pointer ${
+                  theme == "dark" ? "text-white" : "text-black"
+                } hover:text-black`}
                 size={25}
               />
             </a>
@@ -50,7 +69,9 @@ const Main = ({ languageTexts, handleChangeLanguage, currentLanguage }) => {
               href="https://www.facebook.com/david.carrenoalvarez/"
             >
               <FaFacebookF
-                className="cursor-pointer hover:text-blue-700"
+                className={`cursor-pointer ${
+                  theme == "dark" ? "text-white" : "text-black"
+                } hover:text-blue-700`}
                 size={25}
               />
             </a>
@@ -59,7 +80,9 @@ const Main = ({ languageTexts, handleChangeLanguage, currentLanguage }) => {
               href="https://www.instagram.com/davidcarrenoalvarez/"
             >
               <FaInstagram
-                className="cursor-pointer hover:text-purple-500"
+                className={`cursor-pointer ${
+                  theme == "dark" ? "text-white" : "text-black"
+                } hover:text-purple-500`}
                 size={25}
               />
             </a>
@@ -68,7 +91,9 @@ const Main = ({ languageTexts, handleChangeLanguage, currentLanguage }) => {
               href="https://www.linkedin.com/in/anibal-david-carre%C3%B1o-alvarez-2066aa267/"
             >
               <FaLinkedinIn
-                className="cursor-pointer hover:text-blue-400"
+                className={`cursor-pointer ${
+                  theme == "dark" ? "text-white" : "text-black"
+                } hover:text-blue-400`}
                 size={25}
               />
             </a>
