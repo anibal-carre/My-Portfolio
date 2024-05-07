@@ -18,7 +18,9 @@ const Sidenav = ({ languageTexts, currentLanguage, theme, setTheme }) => {
     <div>
       <AiOutlineMenu
         onClick={handleNav}
-        className="absolute top-4 right-4 z-[99] md:hidden"
+        className={`absolute top-4 right-4 z-[99] md:hidden ${
+          theme == "dark" ? "text-white" : "text-zinc-700"
+        }`}
       />
 
       {nav ? (
@@ -32,7 +34,7 @@ const Sidenav = ({ languageTexts, currentLanguage, theme, setTheme }) => {
             href="#main"
             className={`w-[75%] flex justify-center items-center rounded-full shadow-lg  ${
               theme == "dark"
-                ? "bg-zinc-700 shadow-zinc-800 text-white"
+                ? "bg-zinc-950 shadow-zinc-800 text-white"
                 : "bg-gray-100 shadow-gray-400 text-black"
             }  m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200`}
           >
@@ -47,7 +49,7 @@ const Sidenav = ({ languageTexts, currentLanguage, theme, setTheme }) => {
             href="#work"
             className={`w-[75%] flex justify-center items-center rounded-full shadow-lg  ${
               theme == "dark"
-                ? "bg-zinc-700 shadow-zinc-800 text-white"
+                ? "bg-zinc-950 shadow-zinc-800 text-white"
                 : "bg-gray-100 shadow-gray-400 text-black"
             }  m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200`}
           >
@@ -62,7 +64,7 @@ const Sidenav = ({ languageTexts, currentLanguage, theme, setTheme }) => {
             href="#projects"
             className={`w-[75%] flex justify-center items-center rounded-full shadow-lg  ${
               theme == "dark"
-                ? "bg-zinc-700 shadow-zinc-800 text-white"
+                ? "bg-zinc-950 shadow-zinc-800 text-white"
                 : "bg-gray-100 shadow-gray-400 text-black"
             }  m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200`}
           >
@@ -77,7 +79,7 @@ const Sidenav = ({ languageTexts, currentLanguage, theme, setTheme }) => {
             href="#main"
             className={`w-[75%] flex justify-center items-center rounded-full shadow-lg  ${
               theme == "dark"
-                ? "bg-zinc-700 shadow-zinc-800 text-white"
+                ? "bg-zinc-950 shadow-zinc-800 text-white"
                 : "bg-gray-100 shadow-gray-400 text-black"
             }  m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200`}
           >
@@ -92,7 +94,7 @@ const Sidenav = ({ languageTexts, currentLanguage, theme, setTheme }) => {
             href="#contact"
             className={`w-[75%] flex justify-center items-center rounded-full shadow-lg  ${
               theme == "dark"
-                ? "bg-zinc-700 shadow-zinc-800 text-white"
+                ? "bg-zinc-950 shadow-zinc-800 text-white"
                 : "bg-gray-100 shadow-gray-400 text-black"
             }  m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200`}
           >
@@ -106,7 +108,7 @@ const Sidenav = ({ languageTexts, currentLanguage, theme, setTheme }) => {
               onClick={() => setTheme("light")}
               className={`w-[75%] flex justify-center items-center rounded-full shadow-lg  ${
                 theme == "dark"
-                  ? "bg-zinc-700 shadow-zinc-800 text-white"
+                  ? "bg-zinc-950 shadow-zinc-800 text-white"
                   : "bg-gray-100 shadow-gray-400 text-black"
               }  m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200`}
             >
@@ -118,7 +120,7 @@ const Sidenav = ({ languageTexts, currentLanguage, theme, setTheme }) => {
               onClick={() => setTheme("dark")}
               className={`w-[75%] flex justify-center items-center rounded-full shadow-lg  ${
                 theme == "dark"
-                  ? "bg-zinc-700 shadow-zinc-800 text-white"
+                  ? "bg-zinc-950 shadow-zinc-800 text-white"
                   : "bg-gray-100 shadow-gray-400 text-black"
               }  m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200`}
             >
@@ -135,49 +137,77 @@ const Sidenav = ({ languageTexts, currentLanguage, theme, setTheme }) => {
         <div className="flex flex-col">
           <a
             href="#main"
-            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-200"
+            className={`${
+              theme == "dark"
+                ? "bg-zinc-950 text-white shadow-md shadow-zinc-700"
+                : "shadow-lg bg-gray-100 shadow-gray-400"
+            } rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-200`}
           >
             <AiOutlineHome />
           </a>
 
           <a
             href="#work"
-            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-200"
+            className={`${
+              theme == "dark"
+                ? "bg-zinc-950 text-white shadow-md shadow-zinc-700"
+                : "shadow-lg bg-gray-100 shadow-gray-400"
+            } rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-200`}
           >
-            <GrProjects />
+            <BsBook />
           </a>
 
           <a
             href="#projects"
-            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-200"
+            className={`${
+              theme == "dark"
+                ? "bg-zinc-950 text-white shadow-md shadow-zinc-700"
+                : "shadow-lg bg-gray-100 shadow-gray-400"
+            } rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-200`}
           >
             <AiOutlineProject />
           </a>
 
           <a
             href="#main"
-            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-200"
+            className={`${
+              theme == "dark"
+                ? "bg-zinc-950 text-white shadow-md shadow-zinc-700"
+                : "shadow-lg bg-gray-100 shadow-gray-400"
+            } rounded-full m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-200`}
           >
             <BsPerson />
           </a>
 
           <a
             href="#contact"
-            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-200"
+            className={`${
+              theme == "dark"
+                ? "bg-zinc-950 text-white shadow-md shadow-zinc-700"
+                : "shadow-lg bg-gray-100 shadow-gray-400"
+            } rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-200`}
           >
             <AiOutlineMail />
           </a>
           {theme == "dark" ? (
             <button
               onClick={() => setTheme("light")}
-              className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-200"
+              className={` ${
+                theme == "dark"
+                  ? "bg-zinc-950 text-white shadow-md shadow-zinc-700"
+                  : ""
+              } rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-200`}
             >
               <BiSun />
             </button>
           ) : (
             <button
               onClick={() => setTheme("dark")}
-              className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-200"
+              className={` ${
+                theme == "dark"
+                  ? "bg-zinc-950 text-white shadow-md shadow-zinc-700"
+                  : "shadow-lg bg-gray-100 shadow-gray-400"
+              } rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-200`}
             >
               <BiMoon />
             </button>

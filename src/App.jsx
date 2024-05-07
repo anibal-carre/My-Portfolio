@@ -42,13 +42,20 @@ function App() {
       <Courses
         languageTexts={languageTexts}
         currentLanguage={currentLanguage}
+        theme={theme}
       />
-      <Tech currentLanguage={currentLanguage} languageTexts={languageTexts} />
+      <Tech
+        theme={theme}
+        currentLanguage={currentLanguage}
+        languageTexts={languageTexts}
+      />
       <Projects
+        theme={theme}
         currentLanguage={currentLanguage}
         languageTexts={languageTexts}
       />
       <Contact
+        theme={theme}
         currentLanguage={currentLanguage}
         languageTexts={languageTexts}
       />

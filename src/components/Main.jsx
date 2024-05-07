@@ -99,13 +99,18 @@ const Main = ({
             </a>
           </div>
           <div className="flex flex-col gap-1 md:flex-row md:gap-4">
-            <button className="mt-10 bg-[#001b5e] text-white font-semibold p-2 rounded-lg">
+            <button
+              className={`mt-10 ${
+                theme == "dark" ? "bg-zinc-950" : "bg-[#001b5e]"
+              }  text-white font-semibold p-2 rounded-lg`}
+            >
               <a href={languageTexts[currentLanguage].resu} download>
                 {languageTexts[currentLanguage].download}
               </a>
             </button>
 
             <SelectLanguage
+              theme={theme}
               languageTexts={languageTexts}
               currentLanguage={currentLanguage}
               onChangeLanguage={handleChangeLanguage}

@@ -1,6 +1,6 @@
 import CourseItem from "./CourseItem";
 
-const Courses = ({ languageTexts, currentLanguage }) => {
+const Courses = ({ languageTexts, currentLanguage, theme }) => {
   const data = [
     {
       year: 2023,
@@ -22,8 +22,17 @@ const Courses = ({ languageTexts, currentLanguage }) => {
     },
   ];
   return (
-    <div id="work" className="max-w-[1040px m-auto md:pl-20 p-4 py-16">
-      <h1 className="text-4xl font-bold text-center text-[#001b5e] mb-5 md:mb-10">
+    <div
+      id="work"
+      className={` ${
+        theme == "dark" ? "bg-zinc-800 text-white" : ""
+      } max-w-[1040px m-auto md:pl-20 p-4 py-16`}
+    >
+      <h1
+        className={`text-4xl font-bold text-center ${
+          theme == "dark" ? "text-zinc-200" : ""
+        } text-[#001b5e] mb-5 md:mb-10`}
+      >
         {languageTexts[currentLanguage].courses.courses}
       </h1>
       {data.map((item, id) => (
@@ -33,6 +42,7 @@ const Courses = ({ languageTexts, currentLanguage }) => {
           title={item.title}
           duration={item.duration}
           details={item.details}
+          theme={theme}
         />
       ))}
     </div>

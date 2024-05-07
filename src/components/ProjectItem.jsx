@@ -8,9 +8,16 @@ const ProjectItem = ({
   demo,
   languageTexts,
   currentLanguage,
+  theme,
 }) => {
   return (
-    <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-gray-200 to-[#001b5e]">
+    <div
+      className={`relative flex items-center justify-center h-auto w-full shadow-xl rounded-xl group ${
+        theme == "dark"
+          ? "shadow-zinc-900 hover:bg-gradient-to-r from-gray-200 to-zinc-950"
+          : "shadow-gray-400 hover:bg-gradient-to-r from-gray-200 to-[#001b5e]"
+      } `}
+    >
       <img
         src={img}
         alt={title}

@@ -17,8 +17,13 @@
   background-color: rgb(51, 49, 49); /* Color del thumb (barra deslizadora) */
     border-radius: 4px;
 }
+/* #001b5e*/
+.dark::-webkit-scrollbar-thumb{
+  background-color: #09090b; /* Color del thumb (barra deslizadora) */
+    border-radius: 4px;
+}
 
-*::-webkit-scrollbar-thumb{
+.light::-webkit-scrollbar-thumb{
   background-color: #001b5e; /* Color del thumb (barra deslizadora) */
     border-radius: 4px;
 }
