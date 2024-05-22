@@ -302,4 +302,20 @@ export const db = [
       dbIcons.postgresql,
     ],
   },
+  {
+    id: 21,
+    title: "Next Dashboard",
+    img: dbImg.dashboard,
+    demo: "https://nextjs-14-tutorial-five.vercel.app/",
+    repository: "https://github.com/anibal-carre/nextjs-14-tutorial",
+    tech: [
+      dbIcons.html,
+      dbIcons.css,
+      dbIcons.typescript,
+      dbIcons.react,
+      dbIcons.next,
+      dbIcons.tailwind,
+      dbIcons.postgresql,
+    ],
+  },
 ];

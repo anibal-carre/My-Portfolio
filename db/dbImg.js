@@ -18,6 +18,7 @@ import dogwoah from "../src/assets/dogwoah.png";
 import ecommerce from "../src/assets/ecommerce2.png";
 import zustand from "../src/assets/zustand.png";
 import windbnb from "../src/assets/windbnb.png";
+import dashboard from "../src/assets/dashboard.png";
 
 export const dbImg = {
   tipAmount,
@@ -40,4 +41,5 @@ export const dbImg = {
   dogwoah,
   todo,
   windbnb,
+  dashboard,
 };
