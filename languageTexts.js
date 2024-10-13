@@ -30,11 +30,11 @@ export const languageTexts = {
       content1:
         "The Funval Fullstack course is an intensive 4-month program covering both front-end and back-end development. You'll learn HTML, CSS, JavaScript, React, Next.js, Tailwind CSS, PHP, MySQL, and Laravel, gaining skills to create dynamic web experiences and build robust, scalable applications.",
       content2:
-        "This is a technical course, I am currently in the second semester of the course, I started in December 2022 and I plan to graduate in December 2024",
+        "This is a technical course, I am currently in the last semester of the course, I started in December 2022 and I plan to graduate in December 2024",
       content3:
         "The SENAC Brazil Sales Course offers a comprehensive learning experience in effective sales strategies, customer relations, negotiation techniques, and product knowledge.",
-      time1: "+4 months",
-      time2: "+8 months",
+      time1: "5 months",
+      time2: "20 months",
       time3: "3 months",
     },
     tech: "Technologies",
@@ -88,16 +88,16 @@ export const languageTexts = {
       courses: "Cursos",
       title1: "Desenvolvedor Fullstack | Funval Internacional",
       title2:
-        "Análise e desenvolvimento de sistemas | Cruzeiro do Sul - Brasil",
+        "Análise e Desenvolvimento de Sistemas | Cruzeiro do Sul - Brasil",
       title3: "Curso de vendedor | Senac Brasil",
       content1:
         "O curso Funval Fullstack é um programa intensivo de 4 meses que abrange o desenvolvimento tanto de front-end quanto de back-end. Você aprenderá HTML, CSS, JavaScript, React, Next.js, Tailwind CSS, PHP, MySQL e Laravel, adquirindo habilidades para criar experiências web dinâmicas e construir aplicações robustas e escaláveis.",
       content2:
-        "Este é um curso técnico, atualmente estou no segundo semestre do curso. Comecei em dezembro de 2022 e planejo me formar em dezembro de 2024.",
+        "Este é um curso técnico, atualmente estou no último semestre do curso. Comecei em dezembro de 2022 e planejo me formar em dezembro de 2024.",
       content3:
         "O Curso de Vendas do SENAC Brasil oferece uma experiência abrangente de aprendizado em estratégias eficazes de vendas, relacionamento com o cliente, técnicas de negociação e conhecimento de produtos.",
-      time1: "+4 meses",
-      time2: "+8 meses",
+      time1: "5 meses",
+      time2: "20 meses",
       time3: "3 meses",
     },
     tech: "Tecnologias",
@@ -150,16 +150,16 @@ export const languageTexts = {
     courses: {
       courses: "Cursos",
       title1: "Desarrollador Fullstack | Funval Internacional",
-      title2: "Análisis y desarrollo de sistemas | Cruzeiro do Sul - Brasil",
+      title2: "Análisis y Desarrollo de Sistemas | Cruzeiro do Sul - Brasil",
       title3: "Curso de ventas | Senac Brasil",
       content1:
         "El curso Funval Fullstack es un programa intensivo de 4 meses que abarca el desarrollo tanto del front-end como del back-end. Aprenderás HTML, CSS, JavaScript, React, Next.js, Tailwind CSS, PHP, MySQL y Laravel, adquiriendo habilidades para crear experiencias web dinámicas y construir aplicaciones sólidas y escalables.",
       content2:
-        "Este es un curso técnico, actualmente estoy en el segundo semestre del curso. Comencé en diciembre de 2022 y planeo graduarme en diciembre de 2024.",
+        "Este es un curso técnico, actualmente estoy en el último semestre del curso. Comencé en diciembre de 2022 y planeo graduarme en diciembre de 2024.",
       content3:
         "El Curso de Ventas del SENAC Brasil ofrece una experiencia integral de aprendizaje en estrategias efectivas de ventas, relaciones con clientes, técnicas de negociación y conocimiento de productos.",
-      time1: "+4 meses",
-      time2: "+8 meses",
+      time1: "5 meses",
+      time2: "20 meses",
       time3: "3 meses",
     },
     tech: "Tecnologías",
